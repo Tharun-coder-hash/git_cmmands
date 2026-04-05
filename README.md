@@ -66,4 +66,59 @@ If you are in an exam, follow this exact sequence:
 * **Docker COPY fail?** Ensure you ran `mvn clean package` in Jenkins first.
 * **K8s ImagePullBackOff?** Ensure `imagePullPolicy: Never` is in your YAML and you ran the build after setting `minikube docker-env`.
 
-**This list covers everything you need to successfully complete the project. Good luck with the exam!**
+# 🔑 Git Push using Personal Access Token (PAT)
+
+## 📌 Step 1: Clone Repository
+git clone https://github.com/Tharun-coder-hash/Agile_lab.git
+cd Agile_lab
+
+---
+
+## 📌 Step 2: Add Files
+git add .
+
+---
+
+## 📌 Step 3: Commit Changes
+git commit -m "your message"
+
+---
+
+## 📌 Step 4: Push to GitHub
+git push
+
+---
+
+## 🔐 Authentication (IMPORTANT)
+
+When prompted:
+
+Username: Tharun-coder-hash  
+Password: <PASTE YOUR PAT TOKEN>
+
+---
+
+## ⚡ Alternative (No Prompt Method)
+
+git remote set-url origin https://Tharun-coder-hash:<YOUR_TOKEN>@github.com/Tharun-coder-hash/Agile_lab.git
+git push
+
+---
+
+## ⚠️ Important Notes
+
+- Do NOT use your GitHub password
+- Always use PAT instead
+- Keep your token safe and private
+- Token is case-sensitive
+- Set expiry (recommended: 7 days)
+
+---
+
+## 🔥 Quick Cheat Sheet
+
+git add .
+git commit -m "lab"
+git push
+
+
