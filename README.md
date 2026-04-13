@@ -4,6 +4,24 @@ This contains all commands required to move your code from a local folder to a r
 
 ---
 
+# Build Docker image
+docker build -t loan-eligibility:latest .
+
+# List Docker images
+docker images
+
+# Run Docker container
+docker run -p 8082:8080 loan-eligibility:latest
+
+# Apply Kubernetes deployment
+kubectl apply -f k8s/deployment.yaml
+
+# Check running pods
+kubectl get pods
+
+# Check deployments
+kubectl get deployments
+
 ## 1. Git Commands (Local to GitHub)
 
 Use these to initialize your project, handle the subfolder issue, and push to the cloud.
